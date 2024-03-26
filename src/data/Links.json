@@ -1,0 +1,65 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Crafting  interpreters",
+    "Link": "https://craftinginterpreters.com/",
+    "Categorie": "Compilers",
+    "Type": "Web/Book"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Game programming patterns",
+    "Link": "https://gameprogrammingpatterns.com/",
+    "Categorie": "Videogames",
+    "Type": "Web/Book"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Patterns",
+    "Link": "https://www.patterns.dev/",
+    "Categorie": "Patterns and Arquitechture",
+    "Type": "Web"
+  },
+  {
+    "Id": 4,
+    "Nombre": "Javascript design patterns",
+    "Link": "https://www.freecodecamp.org/news/javascript-design-patterns-explained/",
+    "Categorie": "Patterns and Arquitechture",
+    "Type": "Web"
+  },
+  {
+    "Id": 5,
+    "Nombre": "Eloquent javascript",
+    "Link": "https://eloquentjavascript.net/",
+    "Categorie": "Programming language",
+    "Type": "Web/Book"
+  },
+  {
+    "Id": 6,
+    "Nombre": "Squoosh",
+    "Link": "https://squoosh.app/",
+    "Categorie": "Tool",
+    "Type": "Web"
+  },
+  {
+    "Id": 7,
+    "Nombre": "Remove bg",
+    "Link": "https://www.remove.bg/es",
+    "Categorie": "Tool",
+    "Type": "Web"
+  },
+  {
+    "Id": 8,
+    "Nombre": "Tiny png",
+    "Link": "https://tinypng.com/",
+    "Categorie": "Tool",
+    "Type": "Web"
+  },
+  {
+    "Id": 9,
+    "Nombre": "Code wars",
+    "Link": "https://www.codewars.com/",
+    "Categorie": "Game/Learning",
+    "Type": "Web"
+  }
+]
