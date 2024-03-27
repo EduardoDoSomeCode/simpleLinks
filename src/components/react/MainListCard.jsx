@@ -3,7 +3,7 @@ const MainListCardReact = ({linksToRender}) => {
     <ul>
       {linksToRender.map((link) => (
         <li className="simple-btn simple-card  ">
-          <a className="text-btn" href={link.Link}>
+          <a className="text-btn" target="_blank"  href={link.Link}>
             {link.Nombre}
           </a>
           <span className="categorie">{link.Categorie}</span>

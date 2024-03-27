@@ -1,14 +1,10 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Card from "../components/astro/Card.astro";
-import PillComponent from "../components/astro/PillComponent.astro";
-import links from "../data/Links.json";
+import MainPresentationComponent from "../components/react/MainChangeComponent";
 import PilCategorie from "../components/react/PilCategorie";
 import SearchBar from "../components/react/SearchBar";
 import uniqueCategories from "../data/Categorie";
-import MainComponent from "../components/react/mainWrapperComponent";
-import MainPresentationComponent from "../components/react/MainChangeComponent";
-import MainListCard from "../components/astro/MainListCard.astro";
+import links from "../data/Links.json";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="SimpleLinks">
@@ -31,10 +27,9 @@ import MainListCard from "../components/astro/MainListCard.astro";
 
     <div class="carrousel">
       {uniqueCategories.map((item,index)=>(
-        <PilCategorie title={item} spaceLeft={index * 150}  client:idle/>
+        <PilCategorie title={item} spaceLeft={index * 150}  client:idle />
       ))}
     </div>
-
 
 
     <MainPresentationComponent linksToSend={links}   client:idle/>
@@ -52,22 +47,7 @@ import MainListCard from "../components/astro/MainListCard.astro";
     font-size: 20px;
     line-height: 1.6;
   }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -88,6 +68,7 @@ import MainListCard from "../components/astro/MainListCard.astro";
     position: relative;
     
   }
+
   .simple-btn {
     padding: 1rem;
     background-color: #484875;
@@ -123,7 +104,6 @@ import MainListCard from "../components/astro/MainListCard.astro";
   }
   .text-btn {
     font-size: 1.9rem;
-    /* font-family: 'Courier New', Courier, monospace; */
   }
   .search-bar {
     display: flex;
@@ -139,4 +119,6 @@ import MainListCard from "../components/astro/MainListCard.astro";
     border: none;
     color: white;
   }
+
 </style>
+

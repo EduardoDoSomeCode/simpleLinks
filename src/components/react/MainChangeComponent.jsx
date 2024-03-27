@@ -6,6 +6,7 @@ import "../css/buttons.css";
 const MainPresentationComponent = ({ linksToSend }) => {
   const [modeDisplay, setModeDisplay] = useState(true);
 
+
   const setStateToFalse = () => {
     setModeDisplay(true);
   };
@@ -18,24 +19,28 @@ const MainPresentationComponent = ({ linksToSend }) => {
       <div style={{ display: "flex",  justifyContent:"flex-end" , paddingBottom:"1rem", paddingTop:"1rem"}}>
         <button
           onClick={setStateToFalse}
-          className="btn"
+          className="btn btn-left_rounded"
         >
           <img src={"/simpleLinks/rectsvg.svg"} className="btn-img" />
         </button>
         <button
           onClick={setStateToTrue}
-          className="btn"
+          className="btn btn-right_rounded"
 
         >
           <img src={"/simpleLinks/LL.svg"} className="btn-img" />
         </button>
       </div>
-
+      <span>
+    
+</span>
       {modeDisplay ? (
         <MainComponent links={linksToSend} />
       ) : (
         <MainListCardReact linksToRender={linksToSend} />
       )}
+
+
     </>
   );
 };

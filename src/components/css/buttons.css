@@ -7,11 +7,20 @@
 
 .btn{
   background-color: #2f2531;
-  border-radius: 5px;
   border:none;
+  padding: .5rem;
 }
 
 .btn:hover{
   background-color: #251827;
   cursor: pointer;
+}
+
+.btn-left_rounded{
+border-radius:  5px 0px 0px 5px;
+}
+
+.btn-right_rounded{
+  border-radius:  0px 5px 5px 0px;
+
 }
