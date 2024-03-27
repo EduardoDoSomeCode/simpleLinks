@@ -6,11 +6,18 @@
 }
 
 .simple-card{
-    background-color: rgb(101, 69, 110);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(47, 37, 49);
     padding: 1rem;
     border-radius: 5px;
     list-style: none;
 }
 .text-btn{
     text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.categorie, .type{
+    color:gray;
 }
