@@ -1,0 +1,17 @@
+.btn-img {
+  width: 40px;
+  aspect-ratio: 1/1;
+  border: none;
+  object-fit: contain;
+}
+
+.btn{
+  background-color: #2f2531;
+  border-radius: 5px;
+  border:none;
+}
+
+.btn:hover{
+  background-color: #251827;
+  cursor: pointer;
+}

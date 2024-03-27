@@ -8,10 +8,11 @@
 .simple-card{
     display: flex;
     flex-direction: column;
-    background-color: rgb(47, 37, 49);
+    background-color: #2f2531;
     padding: 1rem;
     border-radius: 5px;
     list-style: none;
+    margin-bottom: 1rem;
 }
 .text-btn{
     text-decoration: none;

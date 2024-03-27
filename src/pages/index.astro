@@ -26,6 +26,7 @@ import MainListCard from "../components/astro/MainListCard.astro";
         body="Learn how Astro works and explore the official API docs."
       />
     </ul> -->
+
     <SearchBar client:idle />
 
     <div class="carrousel">
@@ -37,6 +38,7 @@ import MainListCard from "../components/astro/MainListCard.astro";
 
 
     <MainPresentationComponent linksToSend={links}   client:idle/>
+
   </main>
 </Layout>
 
@@ -106,6 +108,8 @@ import MainListCard from "../components/astro/MainListCard.astro";
     flex-direction: column;
     gap: 1rem;
   }
+
+
   .categorie,
   .type {
     background-color: #2a2a3d;

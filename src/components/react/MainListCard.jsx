@@ -2,7 +2,7 @@ const MainListCardReact = ({linksToRender}) => {
   return (
     <ul>
       {linksToRender.map((link) => (
-        <li className="simple-btn simple-card">
+        <li className="simple-btn simple-card  ">
           <a className="text-btn" href={link.Link}>
             {link.Nombre}
           </a>
