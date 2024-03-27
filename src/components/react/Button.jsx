@@ -1,5 +1,5 @@
 import { resetTheme } from "../../nodeStore"
-
+import "../css/buttons.css"
 
 
 const Button =({children})=>{
@@ -7,7 +7,7 @@ const Button =({children})=>{
         resetTheme();
     }
     return(
-        <button onClick={SlowReset}>
+        <button className="btn btn-dark" onClick={SlowReset}>
             {children}
         </button>
     )

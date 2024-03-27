@@ -1,8 +1,7 @@
-import React from "react";
-import CardWrapper from "./cardWrapper";
-import "../css/simpleCard.css";
 import { useStore } from "@nanostores/react";
 import { nameThemeStore, searchQueryString } from "../../nodeStore";
+import "../css/simpleCard.css";
+import CardWrapper from "./cardWrapper";
 
 const MainComponent = ({ links }) => {
   const $nameThemeStore = useStore(nameThemeStore);

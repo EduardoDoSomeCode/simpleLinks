@@ -10,6 +10,10 @@
   border:none;
   padding: .5rem;
 }
+.btn-dark{
+  background-color:  #42324d;
+  color: white;
+}
 
 .btn:hover{
   background-color: #251827;
@@ -23,4 +27,11 @@ border-radius:  5px 0px 0px 5px;
 .btn-right_rounded{
   border-radius:  0px 5px 5px 0px;
 
+}
+
+.search-btn{
+  padding: 0.6rem;
+    background-color: #233147;
+    border: none;
+    color: white;
 }

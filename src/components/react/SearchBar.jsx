@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { addSearchQueryString } from "../../nodeStore";
-
+import "../css/buttons.css";
+import "../css/input.css";
 const SearchBar = () => {
   const [query, setStringQuery] = useState("");
 
@@ -18,8 +19,8 @@ const SearchBar = () => {
         justifyContent: "center",
       }}
     >
-      <input type="text" onChange={setSearchStringQuery} />
-      <button>search</button>
+      <input className="main-text-bar"  type="text" onChange={setSearchStringQuery} />
+      <button className="search-btn">search</button>
     </div>
   );
 };
