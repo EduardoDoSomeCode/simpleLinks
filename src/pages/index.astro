@@ -1,4 +1,5 @@
 ---
+import Button from "../components/react/Button";
 import MainPresentationComponent from "../components/react/MainChangeComponent";
 import PilCategorie from "../components/react/PilCategorie";
 import SearchBar from "../components/react/SearchBar";
@@ -26,14 +27,15 @@ import Layout from "../layouts/Layout.astro";
     <SearchBar client:idle />
 
     <div class="carrousel">
-      {uniqueCategories.map((item,index)=>(
-        <PilCategorie title={item} spaceLeft={index * 150}  client:idle />
-      ))}
+      {
+        uniqueCategories.map((item, index) => (
+          <PilCategorie title={item} spaceLeft={index * 150} client:idle />
+        ))
+      }
     </div>
+    <Button client:idle> clean Theme </Button>
 
-
-    <MainPresentationComponent linksToSend={links}   client:idle/>
-
+    <MainPresentationComponent linksToSend={links} client:idle />
   </main>
 </Layout>
 
@@ -66,7 +68,6 @@ import Layout from "../layouts/Layout.astro";
     height: 8rem;
     margin-top: 1rem;
     position: relative;
-    
   }
 
   .simple-btn {
@@ -89,7 +90,6 @@ import Layout from "../layouts/Layout.astro";
     flex-direction: column;
     gap: 1rem;
   }
-
 
   .categorie,
   .type {
@@ -119,6 +119,4 @@ import Layout from "../layouts/Layout.astro";
     border: none;
     color: white;
   }
-
 </style>
-

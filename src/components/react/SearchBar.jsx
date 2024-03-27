@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { addSearchQueryString } from "../../nodeStore";
+
 const SearchBar = () => {
   const [query, setStringQuery] = useState("");
 
   const setSearchStringQuery = (event) => {
-    setStringQuery(event.target.value);
+    let stringQuery = event.target.value;
+    setStringQuery(stringQuery);
+    addSearchQueryString(stringQuery);
   };
 
   return (
@@ -16,10 +20,6 @@ const SearchBar = () => {
     >
       <input type="text" onChange={setSearchStringQuery} />
       <button>search</button>
-
-      <div>
-        <span>{query}</span>
-      </div>
     </div>
   );
 };
