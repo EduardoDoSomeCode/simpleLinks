@@ -7,6 +7,8 @@ import PilCategorie from "../components/react/PilCategorie";
 import SearchBar from "../components/react/SearchBar";
 import uniqueCategories from "../data/Categorie";
 import MainComponent from "../components/react/mainWrapperComponent";
+import MainPresentationComponent from "../components/react/MainChangeComponent";
+import MainListCard from "../components/astro/MainListCard.astro";
 ---
 
 <Layout title="SimpleLinks">
@@ -32,20 +34,9 @@ import MainComponent from "../components/react/mainWrapperComponent";
       ))}
     </div>
 
-    <ul >
-      {
-        links.map((link) => (
-          <li class="simple-btn simple-card">
-            <a class="text-btn"  href={link.Link}>{link.Nombre}</a>
-            <span class="categorie">{link.Categorie}</span>
-            <span class="type" >{link.Type}</span>
-          </li>
-        ))
-      }
-    </ul>
 
-    <MainComponent links ={links}/>
-    
+
+    <MainPresentationComponent linksToSend={links}   client:idle/>
   </main>
 </Layout>
 

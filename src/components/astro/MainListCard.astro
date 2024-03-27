@@ -1,0 +1,23 @@
+---
+interface Props {
+  linksToRender: any
+}
+
+const { linksToRender } = Astro.props;
+---
+
+<ul>
+  {
+    linksToRender.map(
+      (link:any) => (
+        <li class="simple-btn simple-card">
+          <a class="text-btn" href={link.Link}>
+            {link.Nombre}
+          </a>
+          <span class="categorie">{link.Categorie}</span>
+          <span class="type">{link.Type}</span>
+        </li>
+      )
+    )
+  }
+</ul>
