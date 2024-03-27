@@ -1,0 +1,16 @@
+
+.pil-Card{
+    text-align: center;
+    position: relative;
+    background-color: #5a7eaf;
+    padding: 1rem;
+    width: 100px;
+    border-radius: 5px;
+    transition: background-color 300ms ease-in;
+}
+
+.pil-Card:hover{
+    background-color: #232a4e;
+    cursor: pointer;
+
+}

@@ -1,12 +1,15 @@
+import "../css/simplePil.css";
 
 const PilCategorie = ({ title, spaceLeft }) => {
 
-
+const ShowValueClick = ()=>{
+    console.log(title)
+}
 
     return (
         <div style={{ position: "absolute" }}>
-            <div style={{  position: "relative", left: `${spaceLeft}px`, background: "#5a7eaf", padding:"1rem",  width: "100px" }}>
-                {title}
+            <div onClick={ShowValueClick} className="pil-Card" style={{  left: `${spaceLeft}px`,  }}>
+              <span style={{fontSize:"1rem"}}>{title}</span>  
             </div>
         </div>
     )

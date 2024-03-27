@@ -1,0 +1,16 @@
+
+.card-Container{
+    display:  grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+
+.simple-card{
+    background-color: rgb(101, 69, 110);
+    padding: 1rem;
+    border-radius: 5px;
+    list-style: none;
+}
+.text-btn{
+    text-decoration: none;
+}
