@@ -42,4 +42,7 @@ All commands are run from the root of the project, from a terminal:
 
 # SimpleLinks
 
-This is a simple list of resources and differnt tools that exist, 
+This is a simple and  small list make with astro of differnt resource to use if you want to learn a specific topic in particular
+
+ranging from simple tools to interesting websites to search information 
+
