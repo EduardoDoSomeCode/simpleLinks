@@ -19,22 +19,24 @@ const MainComponent = ({ links }) => {
 
           return isVisible ? (
             <li className="simple-btn simple-card" key={link.Id}>
-              <a className="text-btn" target="_blank" href={link.Link}>
-                {link.Nombre}
-              </a>
-              <span className="categorie">{link.Categorie}</span>
-              <span className="type">{link.Type}</span>
-              {link.img && (
+                 {link.img && (
                 <img
                   style={{
-                    width: "30px",
+                    width: "40px",
                     aspectRatio: "1/1",
                     paddingTop: "1rem",
+                    paddingBottom:"1rem",
                   }}
                   src={link.img}
                   alt=""
                 />
               )}
+              <a className="text-btn" target="_blank" href={link.Link}>
+                {link.Nombre}
+              </a>
+              <span className="categorie">{link.Categorie}</span>
+              <span className="type">{link.Type}</span>
+           
             </li>
           ) : null;
         })}

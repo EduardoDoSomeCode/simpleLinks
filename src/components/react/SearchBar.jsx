@@ -17,10 +17,10 @@ const SearchBar = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        paddingTop:"3rem",
       }}
     >
-      <input className="main-text-bar"  type="text" onChange={setSearchStringQuery} />
-      <button className="search-btn">search</button>
+      <input placeholder="Start searching..." className="main-text-bar" style={{width:"60%"}}  type="text" onChange={setSearchStringQuery} />
     </div>
   );
 };
